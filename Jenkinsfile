@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        mail(subject: 'pipelineexercise', body: 'test', from: 'cemilegungor06@gmail.com', to: 'cemilegungor06@gmail.com')
+        writeFile(file: 'jenkinstest.txt', text: 'job started')
       }
     }
 

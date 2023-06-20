@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        writeFile(file: 'jenkinstest.txt', text: 'job started')
+        mail(subject: 'testjenkins', body: 'sa', to: 'cemile.fedakar@odeontechnology.com')
       }
     }
 

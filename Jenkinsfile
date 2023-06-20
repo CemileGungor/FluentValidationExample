@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('build') {
       steps {
         writeFile(file: 'jenkinstest.txt', text: 'job started')
       }
